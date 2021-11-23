@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Profile</title>
+</head>
+<body>
+    <form action="/my-backend/Profile" method="POST">
+        <table width = 600px cellspacing = "20px">
+            <tr>
+                <td colspan="4" style="border: 1px solid black; background-color: gray; width: 100%;">
+                    <h2>Tell us about yourself</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h4>Profile information</h4>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>Last Name</div>
+                    <input name="lastname" type="text" size = "95%">
+                </td>
+                <td>
+                    <div>First Name</div>
+                    <input name="firstname" type="text" size = "95%">
+                </td>
+            <tr>
+                <td>
+                    <div>Email</div>
+                    <input type="text" name="email" size="95%">
+                </td>
+                <td>
+                    <div>Phone</div>
+                    <input type="text" name="phone" size="95%">
+                </td>
+            </tr>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Gender</h4>
+                    <div style="text-align:right">
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                    </div>
+                </td>
+            </tr>
+            <tr><td colspan="4"> <hr/></td></tr>
+            <tr>
+                <td>
+                    <h4>Current Address</h4>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="City" style="width: 200px;">
+                        <option value="" disabled selected>Province/City<Province>
+                        <option value="phnompenh">Phnom Penh</option>
+                        <option value="kampungchhnang">Kampong Chhnang</option>
+                        <option value="preyveng">Preyveng</option>
+                    </select>
+                    
+                    <select name="Country">
+                        <option value="" disabled selected>Country</option>
+                        <option value="Cambodia">Cambodia</option>
+                    </select>
+                </td>
+                <td align="right">
+                    <input type="text" name="PostCode" placeholder="Post Code" size="50%">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <textarea placeholder="Address" name="address" rows="5" cols="198"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h4>Skills</h4>
+                </td>
+                <td colspan="2">
+                    <h4>Language</h4>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                <input name="skills" type="checkbox" value="designing"/>designing
+                </td>
+                
+                <td>
+                <input name="skills" type="checkbox" value="database management" /> Database management
+                </td>
+                <td>
+                    <input name="skills" type="checkbox" value="english"/> English
+                    <input name="skills" type="checkbox" value="Chinese"/> Chinese
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input name="skills" type="checkbox" value="coding" /> Coding 
+
+                </td>
+                <td>
+                    <input name="skills" type="checkbox" value="debug" /> Debug
+
+                </td>
+                <td>
+                    <input name="skills" type="checkbox" value="french" /> French
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <h4>Experiences</h4>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <h4>From</h4> 
+                </td>
+                <td>
+                    <h4>To</h4>
+                </td>
+                <td colspan="2">
+                    <h4>Description</h4>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text"style width="100%;"></td>
+                <td><input type="text"style width="100%;"></td>
+                <td colspan="2"><input type="text" style="width: 100%;"></td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td colspan="2"><input type="text" style="width: 100%;"></td>           
+            </tr>
+            <tr>
+                <td><input type="text"style width="100%;"></td>
+                <td><input type="text"style width="100%;"></td>
+                <td colspan="2"><input type="text" style="width: 100%;"></td>
+            </tr>
+            <tr>
+                <td><input type="text"style width="100%;"></td>
+                <td><input type="text"style width="100%;"></td>
+                <td colspan="2"><input type="text" style="width: 100%;"></td>
+            </tr>
+            
+
+
+
+            <tr>
+                <td colspan="2">
+                    <h4>Choose your profile photo</h4>
+                    <Input type="file"/>
+
+                </td>
+                
+            </tr>
+            
+        </table>
+        <button type="submit" style="background-color:rgb(79, 79, 202); position:relative; left:90%;"> Submit</button>
+    </form>
+</body>
+</html>
